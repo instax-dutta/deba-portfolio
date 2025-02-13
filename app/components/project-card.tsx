@@ -4,7 +4,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Github } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 interface ProjectCardProps {
   title: string
@@ -15,8 +15,14 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ title, description, image, link, tags }: ProjectCardProps) {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+    <div className={`transition-opacity duration-500 ${isVisible ? "opacity-100" : "opacity-0"}`}>
       <Card className="overflow-hidden h-full flex flex-col bg-shadowed-stone text-foreground shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-[#B87333]/20 hover:border-[#B87333]">
         <div className="relative aspect-video">
           <Image
@@ -51,7 +57,7 @@ export default function ProjectCard({ title, description, image, link, tags }: P
           </Link>
         </CardFooter>
       </Card>
-    </motion.div>
+    </div>
   )
 }
 

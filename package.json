@@ -61,11 +61,11 @@
     "@emotion/is-prop-valid": "latest",
     "fs": "latest",
     "path": "latest",
-    "tailwindcss": "latest",
     "framer-motion": "latest",
     "tsparticles-slim": "latest",
     "react-particles": "latest",
-    "tsparticles-engine": "latest"
+    "tsparticles-engine": "latest",
+    "tailwindcss": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",
