@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 34 26% 45%;
+    --card: 0 0% 11%;
+    --card-foreground: 34 26% 45%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 34 26% 45%;
+    --primary: 25 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 174 100% 18%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 34 26% 45%;
+    --accent: 46 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 34 26% 45%;
+    --input: 0 0% 11%;
+    --ring: 25 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-saffron {
+    background-color: #ff8800;
+  }
+
+  .bg-peacock {
+    background-color: #005f56;
+  }
+
+  .bg-kesar-gold {
+    background-color: #d4af37;
+  }
+
+  .bg-sindoor-red {
+    background-color: #c1121f;
+  }
+
+  .bg-indigo {
+    background-color: #4b0082;
+  }
+
+  .bg-copper {
+    background-color: #b87333;
+  }
+
+  .bg-dark-canvas {
+    background-color: #121212;
+  }
+
+  .bg-shadowed-stone {
+    background-color: #2e2e2e;
+  }
+
+  .bg-sandstone {
+    background-color: #8b735b;
+  }
+}
+
+.bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+

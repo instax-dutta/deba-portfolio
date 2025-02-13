@@ -1,0 +1,22 @@
+{
+  "node": {
+    "2d07d7cb8026b4a308b0a61271720d6f05e7942e": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsaiduttaabhishekdash%2Fdeba-portfolio%2Fapp%2Factions.ts%22%2C%5B%22downloadResume%22%2C%22submitContactForm%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "9cec15830f186d45169150abeba9b041084aa017": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsaiduttaabhishekdash%2Fdeba-portfolio%2Fapp%2Factions.ts%22%2C%5B%22downloadResume%22%2C%22submitContactForm%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "SUr5D8gDGMZKLtmShHX6rbvO+wpGvDVVOP+vAyxRZt4="
+}
