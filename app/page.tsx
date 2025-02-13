@@ -5,7 +5,6 @@ import ProjectCard from "./components/project-card"
 import TechStack from "./components/tech-stack"
 import AnimatedText from "./components/animated-text"
 import ParticleBackground from "./components/particle-background"
-import { motion } from "framer-motion"
 import { downloadResume } from "./actions"
 import ScrollButton from "./components/scroll-button"
 import ScrollToTopButton from "./components/scroll-to-top-button"
@@ -49,24 +48,14 @@ export default function Page() {
 
         <main className="container px-4 md:px-6">
           <section id="about" className="py-20 md:py-32 flex flex-col items-center justify-center min-h-screen">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center space-y-6"
-            >
+            <div className="text-center space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-kesar-gold mb-4">
                 <AnimatedText text="Debadarshan Maharana" />
               </h1>
               <p className="mx-auto max-w-[700px] text-lg sm:text-xl md:text-2xl text-[#8B735B]">
                 B.Tech CSE Student | Aspiring Full Stack Developer
               </p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="flex flex-wrap justify-center gap-4 mt-8"
-              >
+              <div className="flex flex-wrap justify-center gap-4 mt-8">
                 <Link href="https://github.com/debadarshan9" target="_blank">
                   <Button
                     variant="outline"
@@ -97,8 +86,8 @@ export default function Page() {
                     Email
                   </Button>
                 </Link>
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
             <ScrollButton
               targetId="projects"
               className="mt-16 bg-kesar-gold text-black hover:bg-sindoor-red hover:text-white rounded-full p-2 transition-colors"
